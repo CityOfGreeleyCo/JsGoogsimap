@@ -3,12 +3,12 @@
 function initialize() {
 
     // center map to lat/long on load
-    var myLatlng = new google.maps.LatLng(40.019444, -105.292778);
+    var myLatlng = new google.maps.LatLng(39.0473, -105.4654);
 
     // set map options
     var mapOptions = {
 
-           zoom: 14,
+           zoom: 7,
            center: myLatlng,
            mapTypeId: google.maps.MapTypeId.ROADMAP
 
@@ -24,9 +24,23 @@ function initialize() {
     var locations =  [
     
         // add your locations here manually or from database (content of infowindow, lat, long)
-        ['Microsoft', -105.275586, 40.017721],
-        ['Google', -105.260998, 40.021659],
-        ['Gabe Villa<br/><img src="http://photos4.meetupstatic.com/photos/member/8/a/6/9/member_8615433.jpeg" width="40"/>',-105.266686, 40.017721]
+        ['Charities Helped<br/>
+        <ul><li>Pikes Peak Childrens Museum</li>
+        <li>First Congregational Preschool</li>
+        <li>Mile High Weimerainer Rescue</li>
+        <li>SOAR! Youth &amp; Adult Choir</li>
+        <li>Mountain View Young Marines</li>
+        <li>High Plains Chautauqua</li>
+        <li>Greeley Imagination Station</li>
+        <li>Global Refugee Center</li></ul>', -104.694836, 40.42699],
+        ['<strong>DeVry</strong><br/><br/>Charities Helped<br/>', -104.809415, 38.94609],
+        ['Charities Helped<br/>
+        <ul><li>A+ Schools</li>
+        <li>Pueblo Young Marines</li>
+        <li>Mesa County Partners</li>
+        <li>New Foundations</li>
+        <li>Get Smart Schools</li>', -105.275918, 40.018162],
+        ['<strong>DeVry</strong><br/><br/>Charities Helped<br/>',-104.89326, 39.602135]
 
     ];
 
@@ -38,7 +52,7 @@ function initialize() {
 
         // set title and content
         var title = locations[i][0],
-          content = "Hello there " + title;
+          content = title;
 
         // create markers
         marker = new google.maps.Marker({
