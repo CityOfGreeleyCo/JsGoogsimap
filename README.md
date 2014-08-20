@@ -7,7 +7,7 @@ This abstracts away some of the harder javascript in regards to Google Maps and 
 
 Usage:
 
-Include css/main.css in your page:
+Include css/main.css in your page as well as include the myicon.png for the pins in the root of your application:
 ```html
 <link rel="stylesheet" href="css/main.css"/>
 ```
